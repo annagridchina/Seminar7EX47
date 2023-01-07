@@ -74,16 +74,17 @@ public class Library47
 
 
 // Заполнение числами двумерного массива от ... до ...
-  public static void FillMatrix(int[] matrix);
-  {
-    for (int i = 0; i < matrix.GetLenth(0); i++)
-    {
-     for (int j = 0; j < matrix.GetLenth(1); j++)  
-      {
-        matrix[i,j] = NewRandom().Next(10, 10);
-      }
-    }
-  }
+  // public static void FillMatrix(int[] matrix);
+  // {
+  //   for (int i = 0; i < matrix.GetLength(0); i++)
+  //   {
+  //    for (int j = 0; j < matrix.GetLength(1); j++)  
+  //     {
+  //       matrix[i,j] = NewRandom().Next(10, 10);
+  //     }
+  //   }
+  // }
+
 // Заполнение двумерного массива рандомными вещественными числами
 public static void FillArray2D(double[,] array)
 {
@@ -111,7 +112,7 @@ public static void PrintArray2D(double[,] array)
 }
 
 // Функция ввода данных
-public static int ReadInt(string message)
+static int ReadInt(string message)
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
